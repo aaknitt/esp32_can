@@ -116,6 +116,7 @@ void task_LowLevelRX(void *pvParameters)
         {
             espCan->processFrame(message);
         }
+	vTaskDelay(1);
     }
 }
 
